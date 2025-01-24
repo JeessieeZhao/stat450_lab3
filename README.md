@@ -1,4 +1,6 @@
 # stat450_lab3
+From the plot, I find that there is a positive relationship, but within species. 
+
 To test the relationship between bill length and bill depth within species, a linear regression model can be used. The model should account for species as a grouping variable to control for inter-species differences.
 
 ### Model Formula:
