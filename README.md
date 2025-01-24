@@ -1,6 +1,15 @@
 # stat450_lab3
 To test the relationship between bill length and bill depth within species, a linear regression model can be used. The model should account for species as a grouping variable to control for inter-species differences.
 
-The beta_0 refers to the intercept. The beta_1 measures the effect of bill length on bill depth, holding species constant. And the beta_2 captures differences between species clusters.
+### Model Formula:
+**BillDepth = β₀ + β₁ × BillLength + β₂ × Species + ϵ**
 
-After fitting the model, we would have to verify that the residuals should have constant variance (homoscedasticity). And, the relationship between bill length and bill depth is linear within each species. Also, check there is no multicollinearity between variables (bill length and species).
+- **β₀** refers to the intercept.  
+- **β₁** measures the effect of bill length on bill depth, holding species constant.  
+- **β₂** captures differences between species clusters.
+
+### Additional Notes:
+After fitting the model, we would have to verify the following:
+1. The residuals should have constant variance (*homoscedasticity*).  
+2. The relationship between bill length and bill depth should be linear within each species.  
+3. There should be no multicollinearity between variables (bill length and species).
